@@ -1,136 +1,102 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-family: sans, sans-serif, helvetica;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.header {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to bottom, #f39c12, #34495e);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .header h1 {
-    padding: 5px;
-    border-radius: 10px;
-    color: #ffffff;
-    font-family: monospace;
-  }
-  /* about section */
-  .about {
-    width: 100%;
-    height: 100vh;
-    padding: 50px 20px;
-    background-color: #34495e;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    box-sizing: border-box;
-  }
-  .about > .one, .two, .three {
-    width: 100%;
-    height: auto;
-    padding: 40px;
-    box-sizing: border-box;
-    margin: 10px 0;
-  }
-  .about h1, h2, h3, h4, h5, h6 {
-    color: #f39c12;
-    padding-bottom: 10px;
-  }
-  .about p {
-    line-height: 25px;
-    font-weight: bold;
-    font-family: helvetica;
-    color: #ffffff;
-  }
-  /* three */
-  .about .three a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: monospace;
-    font-size: 20px;
-  }
-  /* footer */
-  .footer {
-    width: 100%;
-    height: 50px;
-    background-color: #f39c12;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer p {
-    color: #34495e;
-    font-weight: bold;
-  }
-/* MEDIA */
-@media only screen and (max-width: 375px) and (max-height: 767px) and (max-width:768px) and (max-height:1024px) {
-  /* header */
-  .header {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to bottom, #f39c12, #34495e);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .header h1 {
-    padding: 5px;
-    border-radius: 10px;
-    color: #ffffff;
-    font-family: monospace;
-  }
-  /* about section */
-  .about {
-    width: 100%;
-    height: auto;
-    padding: 50px 20px;
-    background-color: #34495e;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-  }
-  .about > .one, .two, .three {
-    width: 100%;
-    height: auto;
-    padding: 40px;
-    box-sizing: border-box;
-    margin: 10px 0;
-  }
-  .about h1, h2, h3, h4, h5, h6 {
-    color: #f39c12;
-    padding-bottom: 10px;
-  }
-  .about p {
-    line-height: 25px;
-    font-weight: bold;
-    font-family: helvetica;
-    color: #ffffff;
-  }
-  /* three */
-  .about .three a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: monospace;
-    font-size: 20px;
-  }
-  /* footer */
-  .footer {
-    width: 100%;
-    height: 50px;
-    background-color: #f39c12;
-    /* background: linear-gradient(to bottom, #34495e); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer p {
-    color: #34495e;
-    font-weight: bold;
-  }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fafafa;
 }
+
+header {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+}
+
+header nav {
+  width: 100%;
+  height: 50px;
+  padding: 0 250px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .logo > a {
+  display: block;
+  padding: 0.4rem;
+  text-decoration: none;
+  font-family: 'Rock Salt', cursive;
+  color: #000;
+  cursor: pointer;
+}
+
+header nav .logo > a:hover {
+  color: grey;
+  font-weight: bold;
+}
+
+header nav .navMenu li {
+  display: inline-block;
+}
+
+header nav .navMenu li a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+header nav .navMenu li a:hover {
+  color: grey;
+}
+
+main {
+  padding: 10px 0;
+  height: 300px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background: #fafafa;
+  padding: 0 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer p {
+  color: #000;
+  padding: 1rem 0;
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0;
+}
+
+footer .social .fab {
+  padding: 0 10px;
+  font-size: 18px;
+  color: #000;
+}
+
+footer .social .fab:hover {
+  color: grey;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
