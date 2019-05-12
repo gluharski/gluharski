@@ -47,11 +47,15 @@ header nav .logo > a:hover {
   font-weight: bold;
 }
 
-header nav .navMenu li {
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
   display: inline-block;
 }
 
-header nav .navMenu li a {
+header nav ul li a {
   display: block;
   padding: 1rem;
   text-decoration: none;
@@ -59,7 +63,7 @@ header nav .navMenu li a {
   cursor: pointer;
 }
 
-header nav .navMenu li a:hover {
+header nav ul li a:hover {
   color: grey;
 }
 
@@ -107,7 +111,7 @@ footer .social .fab:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
   header {
     width: 100vw;
     height: 50px;
@@ -134,33 +138,27 @@ footer .social .fab:hover {
     top: 0;
     right: 0;
   }
-  header nav .navMenu {
-    display: block;
+  header nav ul {
     display: none;
     position: absolute;
     top: 50px;
     left: 0;
     right: 0;
     bottom: 0;
-    background: red;
-    width: 100vw;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
   }
-  header nav .navMenu li {
+  header nav ul li {
     display: block;
     width: 100vw;
     height: 50px;
-    background: red;
     background: #fff;
     margin-top: 1px;
   }
-  header nav .navMenu li a {
+  header nav ul li a {
     display: block;
     text-align: center;
     font-weight: bold;
   }
-  header nav .navMenu li .active {
+  header nav ul li .active {
     color: grey;
   }
   footer {
@@ -195,9 +193,9 @@ footer .social .fab:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   header {
-    max-width: 100vw;
+    width: 100vw;
     height: 50px;
     background: #fff;
   }
@@ -222,33 +220,27 @@ footer .social .fab:hover {
     top: 0;
     right: 0;
   }
-  header nav .navMenu {
-    display: block;
+  header nav ul {
     display: none;
     position: absolute;
     top: 50px;
     left: 0;
     right: 0;
     bottom: 0;
-    background: red;
-    width: 100vw;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
   }
-  header nav .navMenu li {
+  header nav ul li {
     display: block;
     width: 100vw;
     height: 50px;
-    background: red;
     background: #fff;
     margin-top: 1px;
   }
-  header nav .navMenu li a {
+  header nav ul li a {
     display: block;
     text-align: center;
     font-weight: bold;
   }
-  header nav .navMenu li .active {
+  header nav ul li .active {
     color: grey;
   }
   footer {

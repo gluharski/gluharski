@@ -1,5 +1,9 @@
 $(document).ready(function() {
+  
   $('.toggle').click(function() {
-    $('.navMenu').toggle();
+
+    $('nav > ul').toggle();
+
   });
+
 });
