@@ -56,12 +56,9 @@ header {
     }
   }
 }
-main {
-  padding: 10px 0;
-  height: 300px;
-  // heading of this section
-}
-// Footer
+// *************** Main Section
+
+// *************** Footer
 footer {
   width: 100%;
   height: 50px;
@@ -125,12 +122,12 @@ footer {
         left: 0;
         right: 0;
         bottom: 0;
+        z-index: 1;
         li {
           display: block;
           width: 100vw;
           height: 50px;
           background: #fff;
-          margin-top: 1px;
           a {
             display: block;
             text-align: center;
@@ -144,7 +141,47 @@ footer {
     }
   }
   // Main Section
-
+  main {
+    width: 100vw;
+    padding: 10px;
+    // height: 100vh;
+    // background: red;
+    .row {
+      width: 100%;
+      // височината на row контейнера
+      height: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      //***************** content inside this row
+      .image {
+        flex: 1 0 200px;
+        width: 100%;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        &:hover > .overlay{
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          h2 {
+            color: #fff;
+          }
+        }
+        img {
+          width: 100%;
+          height: 300px;
+        }
+      }
+    }
+  }
   footer {
     width: 100vw;
     height: auto;
@@ -227,7 +264,47 @@ footer {
     }
   }
   // Main Section
-
+  main {
+    width: 100vw;
+    padding: 10px;
+    // height: 100vh;
+    // background: red;
+    .row {
+      width: 100%;
+      // височината на row контейнера
+      height: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      //***************** content inside this row
+      .image {
+        flex: 1 0 200px;
+        width: 100%;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        &:hover > .overlay{
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          h2 {
+            color: #fff;
+          }
+        }
+        img {
+          width: 100%;
+          height: 300px;
+        }
+      }
+    }
+  }
   footer {
     width: 100vw;
     height: auto;
@@ -259,3 +336,5 @@ footer {
     }
   }
 }
+
+// Tablet Version
