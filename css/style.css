@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  font-family: "Roboto", "Sans-serif";
+}
+nav {
+  width: 100%;
+  max-width: 768px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #262626;
+}
+nav .logo {
+  padding: 5px;
+}
+nav .logo a {
+  padding: 0;
+}
+nav .logo a span {
+  font-size: 30px;
+  font-family: "Yellowtail", "Cursive";
+}
+nav a {
+  display: inline-block;
+  padding: 15px;
+  color: #c8cecc;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #f0ab22;
+}
