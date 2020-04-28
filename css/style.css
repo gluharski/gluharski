@@ -1,34 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+html,
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #212121;
-  font-family: "Roboto", "Sans-serif";
-}
-nav {
-  width: 100%;
-  max-width: 768px;
-  height: 50px;
-  margin: 0 auto;
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
-  background-color: #262626;
+  font-family: 'Roboto', sans-serif;
 }
-nav .logo {
-  padding: 5px;
+aside{
+  width: 25%;
+  height: 100vh;
+  padding: 1.5em;
+  background-color: #ffffff;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
-nav .logo a {
-  padding: 0;
+aside div{
+  display: flex;
+  margin: 10px 0;
 }
-nav .logo a span {
-  font-size: 30px;
-  font-family: "Yellowtail", "Cursive";
+img{
+  width: 20px;
+  margin-right: 5px;
 }
-nav a {
-  display: inline-block;
-  padding: 15px;
-  color: #c8cecc;
+a{
   text-decoration: none;
+  color: blue;
 }
-nav a:hover {
-  color: #f0ab22;
+main{
+  width: 75%;
+  /* padding: 20px 50px; */
+  padding: 1.5em;
+  background-color: #fafbfc;
+}
+section {
+  display: grid;
+  /* padding: 50px; */
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+section div {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  aside,
+  main {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-right: 0;
+  }
 }
